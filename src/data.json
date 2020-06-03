@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Travel",
+    "description": "Turkey, 1 person",
+    "type": "travel",
+    "startDate": "Apr 20, 2019",
+    "endDate": "Apr 21, 2019",
+    "status": "active"
+  },
+  {
+    "id": 2,
+    "name": "Private property",
+    "description": "Aristīda Briāna 9, Rīga",
+    "type": "property",
+    "startDate": "Jan 2, 2019",
+    "endDate": "Apr 25, 2019",
+    "status": "unpaid"
+  },
+  {
+    "id": 3,
+    "name": "KASKO",
+    "description": "Audi A5",
+    "type": "car",
+    "startDate": "May 2, 2020",
+    "endDate": "Jun 10, 2020",
+    "status": "ending_soon"
+  },
+  {
+    "id": 4,
+    "name": "PET",
+    "description": "Muris",
+    "type": "pet",
+    "startDate": "Apr 21, 2019",
+    "endDate": "Apr 23, 2019",
+    "status": "active"
+  }
+]
