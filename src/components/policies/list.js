@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import policiesMock from '../../data.json';
-import PoliciesItem from "./item";
+import PoliciesItem from './item';
 import './policies.css';
 
 function PoliciesList() {
@@ -28,36 +28,36 @@ function PoliciesList() {
     const renderItemsList = items.map(item => <PoliciesItem key={item.id} item={item} editDescription={editDescription} />);
 
     return (
-        <div className="if grid wide policies list">
-            <div className="if row">
-                <h2 className="if u-margin-bottom--16">Insurance policies</h2>
+        <div className='if grid wide policies list'>
+            <div className='if row'>
+                <h2 className='if u-margin-bottom--16'>Insurance policies</h2>
             </div>
             {renderItemsList}
-            <div className="if">
+            <div className='if'>
                 <br/>
                 {/* This link should either forward to another page or trigger loading action */}
-                <a href="#/" className="if link">See 2 more</a>
+                <a href='#/' className='if link'>See 2 more</a>
             </div>
 
-            {modalOpened && <div className={"if backdrop is-open"} role="dialog" aria-labelledby="modal-title"
-                 aria-describedby="modal-description"/>}
-            {modalOpened && <div data-speccer className="if modal">
-                <div className="if title" id="modal-title">
+            {modalOpened && <div className={'if backdrop is-open'} role='dialog' aria-labelledby='modal-title'
+                 aria-describedby='modal-description'/>}
+            {modalOpened && <div data-speccer className='if modal'>
+                <div className='if title' id='modal-title'>
                     Edit description for item {selectedItem.name}
-                    <button type="button" className="if close" aria-label="Close modal" onClick={() => setModalOpened(false)}/>
+                    <button type='button' className='if close' aria-label='Close modal' onClick={() => setModalOpened(false)}/>
                 </div>
-                <div className="if content">
-                    <div className="if form-group">
+                <div className='if content'>
+                    <div className='if form-group'>
                         <input
-                            placeholder="New description"
-                            name="input-field-with-icons-02"
-                            id="input-field-with-icons-02"
-                            type="text"
-                            className="if input-field icon symbol bulb-on"
+                            placeholder='New description'
+                            name='input-field-with-icons-02'
+                            id='input-field-with-icons-02'
+                            type='text'
+                            className='if input-field icon symbol bulb-on'
                             onKeyUp={e => setNewDescription(e.target.value)}
                         />
                     </div>
-                    <button className="if button primary save" onClick={handleEditDescription}>Save</button>
+                    <button className='if button primary save' onClick={handleEditDescription}>Save</button>
                 </div>
             </div>}
         </div>

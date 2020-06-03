@@ -1,9 +1,9 @@
 import React from 'react';
-import PoliciesList from "./components/policies/list";
+import PoliciesList from './components/policies/list';
 
 function App() {
   return (
-    <div className="if">
+    <div className='if'>
         <PoliciesList></PoliciesList>
     </div>
   );

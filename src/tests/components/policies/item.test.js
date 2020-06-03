@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import PoliciesItem from "../../../components/policies/item";
+import PoliciesItem from '../../../components/policies/item';
 import policiesMock from '../../../data.json';
 
 const sampleProps = {

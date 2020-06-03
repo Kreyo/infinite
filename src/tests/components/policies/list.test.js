@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import PoliciesList from "../../../components/policies/list";
-import PoliciesItem from "../../../components/policies/item";
+import PoliciesList from '../../../components/policies/list';
+import PoliciesItem from '../../../components/policies/item';
 
 describe('Policies List', () => {
     it('renders a heading and a list of policy items', () => {
